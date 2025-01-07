@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  java-app:
+    build: .
+    container_name: pipeline
+    image: hritik/pipeline:latest
+    ports:
+      - "8080:8080"
